@@ -682,6 +682,37 @@ table td {
   margin-bottom: 2.5rem;
 }
 
+.sliderNews .tns-nav {
+  position: absolute;
+  right: -4rem;
+  top: 20rem;
+  z-index: 10;
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 768px) {
+  .sliderNews .tns-nav {
+    right: 6.3rem;
+  }
+}
+
+.sliderNews img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 365px;
+  width: 90%;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(253 253 253 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  .sliderNews img {
+    width: 938px;
+  }
+}
+
 /*END OF INDEX,HTML*/
 
 .fixed {
@@ -829,10 +860,6 @@ table td {
 
 .ml-3 {
   margin-left: 0.75rem !important;
-}
-
-.ml-36 {
-  margin-left: 9rem !important;
 }
 
 .ml-\[-1\.5rem\] {
@@ -1117,6 +1144,11 @@ table td {
   padding-right: 2.5rem !important;
 }
 
+.px-3 {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
 .px-32 {
   padding-left: 8rem !important;
   padding-right: 8rem !important;
@@ -1133,11 +1165,6 @@ table td {
 }
 
 .px-6 {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-}
-
-.px-\[1\.5rem\] {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
 }
@@ -1165,6 +1192,11 @@ table td {
 .px-\[4\.5rem\] {
   padding-left: 4.5rem !important;
   padding-right: 4.5rem !important;
+}
+
+.py-1 {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
 }
 
 .py-10 {
@@ -1202,24 +1234,9 @@ table td {
   padding-bottom: 1.5rem !important;
 }
 
-.py-\[0\.6rem\] {
-  padding-top: 0.6rem !important;
-  padding-bottom: 0.6rem !important;
-}
-
 .py-\[1rem\] {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
-}
-
-.px-3 {
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
-}
-
-.py-1 {
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
 }
 
 .pb-10 {
@@ -1238,8 +1255,8 @@ table td {
   padding-bottom: 12rem !important;
 }
 
-.pl-\[20\%\] {
-  padding-left: 20% !important;
+.pl-\[25\%\] {
+  padding-left: 25% !important;
 }
 
 .pt-10 {
@@ -1256,14 +1273,6 @@ table td {
 
 .pt-\[3rem\] {
   padding-top: 3rem !important;
-}
-
-.pl-\[22\%\] {
-  padding-left: 22% !important;
-}
-
-.pl-\[25\%\] {
-  padding-left: 25% !important;
 }
 
 .text-center {
@@ -1533,21 +1542,6 @@ video {
   position: relative;
 }
 
-.my-slidernews img{
-  border: 1px solid white;
-  height: 365px;
-  width: 938px;
-  margin: 0 auto;
-}
-
-.sliderNews .tns-nav{
-  transform: rotate(90deg);
-  position: absolute;
-  right: 6.3rem;
-  top: 20rem;
-  z-index: 50;
-}
-
 .sliderNews .tns-nav button{
   height:8px;
   width: clamp(50px, 5vw, 30px);
@@ -1735,6 +1729,14 @@ nav ul li a{
     margin-bottom: 0px !important;
   }
 
+  .md\:mb-10 {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .md\:ml-36 {
+    margin-left: 9rem !important;
+  }
+
   .md\:ml-\[38\%\] {
     margin-left: 38% !important;
   }
@@ -1743,16 +1745,8 @@ nav ul li a{
     margin-top: 0.75rem !important;
   }
 
-  .md\:ml-36 {
-    margin-left: 9rem !important;
-  }
-
-  .md\:mb-10 {
-    margin-bottom: 2.5rem !important;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px !important;
+  .md\:mt-16 {
+    margin-top: 4rem !important;
   }
 
   .md\:block {
@@ -1783,8 +1777,8 @@ nav ul li a{
     width: 325px !important;
   }
 
-  .md\:w-\[490px\] {
-    width: 490px !important;
+  .md\:w-\[435px\] {
+    width: 435px !important;
   }
 
   .md\:w-\[65\%\] {
@@ -1797,18 +1791,6 @@ nav ul li a{
 
   .md\:w-\[80\%\] {
     width: 80% !important;
-  }
-
-  .md\:w-\[450px\] {
-    width: 450px !important;
-  }
-
-  .md\:w-\[430px\] {
-    width: 430px !important;
-  }
-
-  .md\:w-\[435px\] {
-    width: 435px !important;
   }
 
   .md\:grid-cols-2 {
@@ -1824,14 +1806,19 @@ nav ul li a{
     padding-right: 8rem !important;
   }
 
+  .md\:px-\[1\.5rem\] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
   .md\:px-\[1\.8rem\] {
     padding-left: 1.8rem !important;
     padding-right: 1.8rem !important;
   }
 
-  .md\:py-\[1rem\] {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+  .md\:py-10 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
   }
 
   .md\:py-\[0\.6rem\] {
@@ -1839,14 +1826,9 @@ nav ul li a{
     padding-bottom: 0.6rem !important;
   }
 
-  .md\:px-\[1\.5rem\] {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-  }
-
-  .md\:py-10 {
-    padding-top: 2.5rem !important;
-    padding-bottom: 2.5rem !important;
+  .md\:py-\[1rem\] {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
   }
 
   .md\:pl-\[40\%\] {

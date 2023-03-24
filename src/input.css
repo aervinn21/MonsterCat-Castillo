@@ -68,6 +68,12 @@
     .news-item{
         @apply my-10
     }
+    .sliderNews .tns-nav{
+        @apply rotate-[90deg] absolute md:right-[6.3rem] right-[-4rem] top-[20rem] z-10
+    }
+    .sliderNews img{
+        @apply border-2 border-white h-[365px] md:w-[938px] w-[90%] mx-auto
+    }
 
     /*END OF INDEX,HTML*/
 }
@@ -152,19 +158,6 @@ video {
     position: relative;
 }
 
-.my-slidernews img{
-    border: 1px solid white;
-    height: 365px;
-    width: 938px;
-    margin: 0 auto;
-}
-.sliderNews .tns-nav{
-    transform: rotate(90deg);
-    position: absolute;
-    right: 6.3rem;
-    top: 20rem;
-    z-index: 50;
-}
 .sliderNews .tns-nav button{
     height:8px;
     width: clamp(50px, 5vw, 30px);
