@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply overflow-x-hidden
+    }
+    body::after {
+        -webkit-animation: grain 8s steps(10) infinite;;
+        animation: grain 8s steps(10) infinite;
+        background-image: url('https://cdn.monstercat.com/background-tile.webp');
+        content: "";
+        position: fixed;
+        height: 300%;
+        width: 300%;
+        top: -100%;
+        left: -50%;
+        opacity: 0.5;
+        -webkit-animation: grain 8s steps(10) infinite;
+        -moz-animation: grain 8s steps(10) infinite;
+        -o-animation: grain 8s steps(10) infinite;
+        animation: grain 8s steps(10) infinite;
+        z-index: -2;
+    }
+    @keyframes grain {
+        0%, 100% { transform:translate(0, 0) }
+        10% { transform:translate(-5%, -10%) }
+        20% { transform:translate(-15%, 5%) }
+        30% { transform:translate(7%, -25%) }
+        40% { transform:translate(-5%, 25%) }
+        50% { transform:translate(-15%, 10%) }
+        60% { transform:translate(15%, 0%) }
+        70% { transform:translate(0%, 15%) }
+        80% { transform:translate(3%, 35%) }
+        90% { transform:translate(-10%, 10%) }
+      }
+}
+
+@layer components{
+    .soc-med ul li i{
+        @apply text-white text-xl mb-3
+    }
+    .soc-med ul{
+        @apply lg:mt-10
+    }
+    table td p{
+        @apply text-white text-[1.1rem]
+    }
+    table td{
+        @apply pr-5
+    }
+    .stream__wrapper ul li{
+        @apply border-2 p-2 mx-0
+    }
+    .title{
+        @apply lg:pr-[28rem] pr-[10rem]
+    }
+    .footer__grid a{
+        @apply font-bold text-xl
+    }
+    .nav ul li {
+        @apply font-bold
+    }
+    .open ul{
+        @apply lg:left-[70%] left-[50%]
+    }
+    .news-item{
+        @apply my-10
+    }
+
+    /*END OF INDEX,HTML*/
+}
+.sliderPartners .tns-controls button:first-child{
+    @apply hidden md:block absolute top-[40%] z-10 left-[-5%] text-white  text-[3rem]
+}
+.sliderPartners .tns-controls button:last-child{
+    @apply absolute md:block top-[40%] z-10 right-[-5%]   text-white text-[3rem]
+}
+
+.text {
+    position: absolute;
+    top:40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.collapsable {
+    max-height: 0;
+    padding: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.accordionList h3{
+    color: white;
+}
+.accordionList.active .collapsable {
+    max-height: 500px;
+    border: 1px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+
+.accordionList.active i {
+    transition: 0.2s ease-in-out;
+    transform: rotate(45deg);
+}
+
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.footerimg{
+    margin: 0 auto;
+    width: clamp(450px, 80%, 1000px);
+}
+.footerimg .pic1 img{
+    height: 47px;
+    width: 250px;
+    margin: 0 auto;
+}
+.footerimg .pic2 img{
+    height: 139px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+.my-sliderpartners img{
+    height: 117px;
+    width:204px;
+    margin: 0 auto;
+}
+.my-sliderpartners .tns-nav{
+    text-align: center;
+}
+.my-sliderpartners.tns-nav button{
+    height:8px;
+    width: clamp(50px, 5vw, 90px);
+    background-color: grey;
+    border: none;
+    margin: 50px 5px;
+}
+.my-sliderpartners.tns-nav .tns-nav-active{
+    background-color: white;
+}
+.my-sliderpartners .tns-controls{
+    position: relative;
+}
+
+.my-slidernews img{
+    border: 1px solid white;
+    height: 365px;
+    width: 938px;
+    margin: 0 auto;
+}
+.sliderNews .tns-nav{
+    transform: rotate(90deg);
+    position: absolute;
+    right: 6.3rem;
+    top: 20rem;
+    z-index: 50;
+}
+.sliderNews .tns-nav button{
+    height:8px;
+    width: clamp(50px, 5vw, 30px);
+    background-color: grey;
+    border: none;
+    margin: 50px 5px;
+}
+.sliderNews .tns-nav .tns-nav-active{
+    background-color: white;
+}
+.sliderNews .tns-controls{
+    position: relative;
+}
+
+
+.slider .tns-nav{
+    text-align: center;
+}
+.slider .tns-nav button{
+    height:8px;
+    width: clamp(50px, 5vw, 90px);
+    background-color: grey;
+    border: none;
+    margin: 50px 5px;
+}
+.slider .tns-nav .tns-nav-active{
+    background-color: white;
+}
+.slider .tns-controls{
+    position: relative;
+}
+.values-wrapper{
+  width: clamp(200px, 80%, 1000px);
+  margin:  0 auto;  
+}
+.itemvalue p{
+    padding: 2rem 0;
+}
+.container-wrapper img{
+    height: 456px;
+    width: 456px;
+}
+.container-wrapper p, h1{
+   color: white;
+   width: clamp(450px, 80%, 600px);
+   margin: 0 auto;
+}
+
+.banner h1{
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: bolder;
+    letter-spacing:clamp(0, 6vw, 20px);
+}
+.banner p{
+    width: clamp(450px, 80%, 600px);
+}
+.stroke-text {
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f1f1f1;
+  }
+
+.nav{
+    z-index: 1;
+}
+nav ul{
+    transition: 0.5s ease;   
+    gap: 2rem;
+    display: block;
+    position: absolute;
+    background-color:black;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    text-align: left;
+}
+.open ul{
+    transition: 0.5s ease;
+    padding: 1.5rem 1rem;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    position: fixed;
+}
+
+nav ul li{
+    margin: 1rem 0;
+    border-bottom: 1px solid black;
+    
+}
+nav ul li a{
+    display: block;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+}
+.toggle-menu {
+    display: block;
+    cursor: pointer;
+}
+.toggle-menu span{
+    background-color: white;
+    height: 0.2rem;
+    width: 2rem;
+    display: block;
+    margin-bottom: 0.4rem;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+}
+.toggle-menu.open span:nth-child(1){
+    transition: 0.5s ease;
+    transform: translate(-2px, 7.3px) rotate(45deg);
+}
+.toggle-menu.open span:nth-child(2){
+    opacity: 0;
+    transition: 0s;
+}
+.toggle-menu.open span:nth-child(3){
+    transition: 0.5s ease;
+    transform: translate(-2px, -12px) rotate(-45deg);
+}
+
+/*END OF RELEASE PAGE*/
